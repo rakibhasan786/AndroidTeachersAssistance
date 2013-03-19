@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xyz" >
+
+    <EditText
+        android:id="@+id/text_field_student_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="149dp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Student name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttoninsertstudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_field_student_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="Insert Student"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/text_field_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:textColor="@android:color/background_dark" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_field_student_name"
+        android:layout_marginTop="16dp"
+        android:text="Student id"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_field_student_name"
+        android:text=""
+        android:textColor="@android:color/background_dark" />
+
+</RelativeLayout>

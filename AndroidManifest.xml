@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.comboyz.abc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+    android:icon="@drawable/ic_launcher"
+        android:label="TeachersAssistance" >
+        <activity
+            android:label="TeachersAssistance"
+            android:name=".MainPage" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:label="AllClass"
+            android:name=".Allclass" >
+            <intent-filter >
+                <action android:name="com.comboyz.abc.Allclass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                  <activity
+            android:label="Main Menu"
+            android:name=".Menu" >
+            <intent-filter >
+                <action android:name="com.comboyz.abc.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                              <activity
+            android:label="Event"
+            android:name=".Event" >
+            
+        </activity>
+        
+         <activity
+            android:label="Lab"
+            android:name=".Lab" >
+            
+        </activity>
+        
+       <activity
+            android:label="Meeting"
+        android:screenOrientation="portrait"  
+            android:name=".Meeting" >
+            
+        </activity>
+        
+           <activity
+            android:label="Demo Class"
+        android:screenOrientation="portrait"  
+            android:name=".Democlass" >
+            
+        </activity>
+        
+         <activity
+            android:label="Addclass Option"
+        android:screenOrientation="portrait"  
+            android:name=".Addclass" >
+        </activity>    
+        
+             
+               
+                 <activity
+            android:label="Attendence Option"
+        android:screenOrientation="portrait"  
+            android:name=".DemoAttendence" >
+        </activity> 
+        
+                     <activity
+            android:label="Add Student Option"
+        android:screenOrientation="portrait"  
+            android:name=".Addstudent" >
+        </activity> 
+           
+                  <activity
+            android:label="Class Routine"
+        android:screenOrientation="portrait"  
+            android:name=".ClassRoutine" >
+        </activity>  
+        
+                      <activity
+            android:label="Start Schedule"
+        android:screenOrientation="portrait"  
+            android:name=".Startschedule" >
+        </activity>  
+        
+                          <activity
+            android:label="Show Alarm"
+        android:screenOrientation="portrait"  
+            android:name=".Showalarm" >
+        </activity>  
+                         
+                         
+           
+          <receiver android:name=".AlarmReceiver" android:process=":remote" />
+    </application>
+
+</manifest>

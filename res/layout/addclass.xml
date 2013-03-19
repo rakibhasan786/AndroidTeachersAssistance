@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xyz" >
+
+    <EditText
+        android:id="@+id/text_field_course_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="149dp"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/buttoninsertclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_field_course_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="Insert Class"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Course Title"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_field_course_number"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:text="Course Number"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:text="Special character (Space,.,@,&amp;,/,% etc) doesn&apos;t support,use alternative ( _ )"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/text_field_course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:textColor="@android:color/background_dark" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
